@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-668B0M35MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-668B0M35MM');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PriceIn.com.lk – Land Prices, Property, Vehicle & Gold Prices in Sri Lanka 2025</title>
@@ -40,23 +31,26 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --ink:     #0D1117;
-      --ink2:    #1E2730;
-      --slate:   #3A4553;
-      --muted:   #6B7A8F;
-      --border:  #DDE3EC;
-      --surface: #F4F7FB;
+      --ink:     #1A1A2E;
+      --ink2:    #2D2D44;
+      --slate:   #4A4A6A;
+      --muted:   #8888AA;
+      --border:  #E8E4F0;
+      --surface: #F8F6FF;
       --white:   #FFFFFF;
-      --gold:    #D4960A;
-      --gold-lt: #F5C842;
-      --teal:    #0B7A6B;
-      --teal-lt: #0FA88F;
-      --red:     #C0392B;
-      --accent:  #1565C0;
+      --gold:    #C8851A;
+      --gold-lt: #F0A830;
+      --teal:    #2E86AB;
+      --teal-lt: #3BA8D0;
+      --red:     #D64045;
+      --accent:  #5C6BC0;
+      --hero-bg: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      --hero-bg2:linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
     }
 
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -64,7 +58,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       background: var(--white);
       color: var(--ink);
       line-height: 1.6;
@@ -73,8 +67,8 @@
 
     /* ── TOPBAR ── */
     .topbar {
-      background: var(--ink);
-      color: rgba(255,255,255,.65);
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      color: rgba(255,255,255,.9);
       font-size: 0.72rem;
       letter-spacing: .04em;
       padding: 7px 0;
@@ -101,13 +95,13 @@
       text-decoration: none; flex-shrink: 0;
     }
     .logo-price {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.65rem; font-weight: 800;
       color: var(--ink);
       letter-spacing: -.03em;
     }
     .logo-in {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.65rem; font-weight: 800;
       color: var(--gold);
       letter-spacing: -.03em;
@@ -137,7 +131,7 @@
 
     /* ── HERO ── */
     .hero {
-      background: var(--ink);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 60%, #f093fb 100%);
       position: relative; overflow: hidden;
       padding: 64px 24px 70px;
     }
@@ -150,8 +144,8 @@
     .hero-grid-lines {
       position: absolute; inset: 0; pointer-events: none;
       background-image:
-        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px);
       background-size: 48px 48px;
     }
     .hero-inner {
@@ -170,7 +164,7 @@
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
     .hero h1 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 4.5vw, 3.2rem);
       font-weight: 800; color: #fff; line-height: 1.1;
       letter-spacing: -.03em; margin-bottom: 16px;
@@ -206,7 +200,7 @@
       box-shadow: 0 24px 64px rgba(0,0,0,.35);
     }
     .hero-search h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1rem; font-weight: 700;
       color: var(--ink); margin-bottom: 16px;
       display: flex; align-items: center; gap: 8px;
@@ -235,7 +229,7 @@
       width: 100%; padding: 10px 12px;
       border: 1.5px solid var(--border); border-radius: 9px;
       font-size: .87rem; color: var(--ink); background: var(--white);
-      font-family: 'DM Sans', sans-serif; outline: none;
+      font-family: 'Plus Jakarta Sans', sans-serif; outline: none;
       transition: border-color .15s;
     }
     .s-field select:focus, .s-field input:focus { border-color: var(--teal); }
@@ -243,7 +237,7 @@
       width: 100%; padding: 12px;
       background: var(--teal); color: #fff;
       border: none; border-radius: 9px;
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: .9rem; font-weight: 700;
       cursor: pointer; transition: background .15s;
     }
@@ -251,9 +245,9 @@
 
     /* ── LIVE TICKER ── */
     .ticker-bar {
-      background: var(--ink2);
+      background: linear-gradient(90deg, #f0eeff, #e8f4ff);
       padding: 10px 0; overflow: hidden;
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      border-bottom: 1px solid #d8d0f0;
     }
     .ticker-inner {
       display: flex; align-items: center;
@@ -263,15 +257,15 @@
     .ticker-label {
       font-size: .68rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: .1em;
-      color: var(--gold); white-space: nowrap;
+      color: var(--accent); white-space: nowrap;
       flex-shrink: 0;
     }
     .ticker-items { display: flex; gap: 24px; flex-wrap: wrap; }
     .t-item {
       display: flex; align-items: center; gap: 7px;
-      font-size: .78rem; color: rgba(255,255,255,.7);
+      font-size: .78rem; color: var(--slate);
     }
-    .t-item strong { color: #fff; font-weight: 600; }
+    .t-item strong { color: var(--ink); font-weight: 600; }
     .t-up { color: #4caf50; font-size: .72rem; }
     .t-dn { color: #f44336; font-size: .72rem; }
 
@@ -286,7 +280,7 @@
       margin-bottom: 32px; flex-wrap: wrap; gap: 12px;
     }
     .sec-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1.7rem; font-weight: 800;
       color: var(--ink); letter-spacing: -.02em;
       line-height: 1.15;
@@ -315,7 +309,7 @@
     .cat-card.featured { border-color: var(--gold); background: #fffbf0; }
     .cat-card.featured:hover { background: #fff5d6; border-color: var(--gold); box-shadow: 0 10px 28px rgba(212,150,10,.15); }
     .cat-icon { font-size: 2.2rem; display: block; margin-bottom: 8px; }
-    .cat-label { font-family: 'Syne', sans-serif; font-size: .88rem; font-weight: 700; color: var(--ink); display: block; }
+    .cat-label { font-family: 'Playfair Display', serif; font-size: .88rem; font-weight: 700; color: var(--ink); display: block; }
     .cat-count { font-size: .72rem; color: var(--muted); margin-top: 3px; display: block; }
 
     /* ── LAND PRICE TABLE ── */
@@ -325,12 +319,12 @@
       border-radius: 14px; overflow: hidden;
     }
     .pd-head {
-      background: var(--ink); color: #fff;
+      background: linear-gradient(135deg, #667eea, #764ba2); color: #fff;
       padding: 13px 18px;
       display: flex; align-items: center; justify-content: space-between;
     }
     .pd-head h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: .92rem; font-weight: 700;
     }
     .pd-head .badge {
@@ -363,7 +357,7 @@
     }
     .v-head {
       padding: 13px 18px; background: var(--ink2); color: #fff;
-      font-family: 'Syne', sans-serif; font-size: .92rem; font-weight: 700;
+      font-family: 'Playfair Display', serif; font-size: .92rem; font-weight: 700;
       display: flex; align-items: center; gap: 8px;
     }
     .v-row {
@@ -379,7 +373,8 @@
 
     /* ── GOLD ── */
     .gold-panel {
-      background: linear-gradient(135deg, #1a1206 0%, #2d1f08 100%);
+      background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+      border: 1.5px solid #f0c060;
       border-radius: 16px; padding: 28px 28px 24px;
       position: relative; overflow: hidden;
       grid-column: span 1;
@@ -391,19 +386,19 @@
       line-height: 1;
     }
     .gold-panel h3 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1rem; font-weight: 700; color: var(--gold-lt);
       margin-bottom: 18px; display: flex; align-items: center; gap: 8px;
     }
     .gold-row {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.08);
+      padding: 9px 0; border-bottom: 1px solid #f0d080;
       font-size: .83rem;
     }
     .gold-row:last-child { border-bottom: none; }
-    .gold-label { color: rgba(255,255,255,.65); }
-    .gold-val { font-weight: 700; color: var(--gold-lt); }
-    .gold-chg { font-size: .7rem; color: #81c784; margin-left: 6px; }
+    .gold-label { color: #7a5500; }
+    .gold-val { font-weight: 700; color: #5a3800; }
+    .gold-chg { font-size: .7rem; color: #2e7d32; margin-left: 6px; }
 
     /* ── PROPERTY LISTINGS ── */
     .prop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
@@ -434,16 +429,16 @@
     }
     .prop-body { padding: 14px 16px 16px; }
     .prop-loc { font-size: .7rem; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 3px; }
-    .prop-title { font-family: 'Syne', sans-serif; font-size: .95rem; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+    .prop-title { font-family: 'Playfair Display', serif; font-size: .95rem; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
     .prop-meta { display: flex; gap: 10px; flex-wrap: wrap; font-size: .73rem; color: var(--muted); margin-bottom: 10px; }
-    .prop-price { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--teal); }
-    .prop-price small { font-size: .68rem; color: var(--muted); font-family: 'DM Sans', sans-serif; font-weight: 400; }
+    .prop-price { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 800; color: var(--teal); }
+    .prop-price small { font-size: .68rem; color: var(--muted); font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; }
 
     /* ── ALL DISTRICTS LOCATION SECTION ── */
-    .loc-section { background: var(--ink); padding: 56px 0; }
+    .loc-section { background: linear-gradient(135deg, #f0eeff 0%, #e8f0ff 100%); padding: 56px 0; }
     .prov-block { margin-bottom: 40px; }
     .prov-label {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: .7rem; font-weight: 800;
       text-transform: uppercase; letter-spacing: .12em;
       color: var(--gold); margin-bottom: 14px;
@@ -452,30 +447,30 @@
     .prov-label::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,.1); }
     .dist-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
     .dist-block {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.8);
+      border: 1px solid #d8d0f0;
       border-radius: 10px; padding: 14px 16px;
     }
     .dist-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: .8rem; font-weight: 700;
       color: rgba(255,255,255,.9); margin-bottom: 10px;
     }
     .town-chips { display: flex; flex-wrap: wrap; gap: 5px; }
     .tc {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
-      color: rgba(255,255,255,.6);
+      background: #f0eeff;
+      border: 1px solid #d0c8f0;
+      color: var(--slate);
       font-size: .7rem; padding: 3px 9px; border-radius: 20px;
       text-decoration: none; transition: all .15s;
     }
     .tc:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
-    .tc.hot { border-color: rgba(212,150,10,.4); color: var(--gold-lt); }
-    .tc.hot:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+    .tc.hot { border-color: #f0a830; color: #8a5500; background:#fff9e6; }
+    .tc.hot:hover { background: var(--gold); border-color: var(--gold); color: #fff; }
 
     /* ── SEO TEXT ── */
     .seo-wrap { max-width: 900px; margin: 0 auto; padding: 56px 24px; }
-    .seo-wrap h2 { font-family: 'Syne', sans-serif; font-size: 1.3rem; font-weight: 800; color: var(--ink); margin: 28px 0 8px; letter-spacing: -.01em; }
+    .seo-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 800; color: var(--ink); margin: 28px 0 8px; letter-spacing: -.01em; }
     .seo-wrap h2:first-child { margin-top: 0; }
     .seo-wrap p { color: var(--slate); margin-bottom: 12px; line-height: 1.8; font-size: .9rem; }
     .seo-wrap ul { color: var(--slate); padding-left: 20px; margin-bottom: 12px; }
@@ -484,14 +479,14 @@
     .seo-wrap a:hover { text-decoration: underline; }
 
     /* ── FOOTER ── */
-    footer { background: var(--ink2); color: rgba(255,255,255,.55); }
+    footer { background: linear-gradient(135deg,#1A1A2E,#2D2D44); color: rgba(255,255,255,.65); }
     .footer-main {
       max-width: 1240px; margin: 0 auto;
       display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr;
       gap: 40px; padding: 48px 24px 40px;
     }
     .ft-logo {
-      font-family: 'Syne', sans-serif; font-size: 1.5rem;
+      font-family: 'Playfair Display', serif; font-size: 1.5rem;
       font-weight: 800; text-decoration: none;
       display: block; margin-bottom: 10px;
     }
@@ -546,6 +541,7 @@
   <strong>PriceIn.com.lk</strong> — Sri Lanka's Most Searched Price Guide &nbsp;|&nbsp;
   <a href="https://landmap.lk" target="_blank" rel="noopener">🏠 Land Prices</a>
   <a href="#">🚗 Vehicle Prices</a>
+  <a href="#exchange-rates">📈 Gold Chart</a>
   <a href="#">🪙 Gold Rate</a>
   <a href="#">සිංහල</a>
   <a href="#">தமிழ்</a>
@@ -562,6 +558,7 @@
       <a href="#property">🏠 Property</a>
       <a href="#vehicles">🚗 Vehicles</a>
       <a href="#gold">🪙 Gold</a>
+      <a href="#exchange-rates">📈 Gold Chart</a>
       <a href="#locations">📍 All Areas</a>
       <a href="#" class="btn-post">+ Post Free Ad</a>
     </nav>
@@ -893,11 +890,480 @@
         <div class="gold-row"><span class="gold-label">Sovereign (8g)</span><span class="gold-val">LKR 198,000</span></div>
         <div class="gold-row"><span class="gold-label">Pavan (8g)</span><span class="gold-val">LKR 196,500</span></div>
         <div class="gold-row"><span class="gold-label">Silver (1g)</span><span class="gold-val">LKR 310</span></div>
-        <div style="margin-top:14px; font-size:.68rem; color:rgba(255,255,255,.35);">Prices indicative. Contact jewellers for exact rates. Updated: Apr 2025</div>
+        <div style="margin-top:14px; font-size:.68rem; color:#b08040;">Prices indicative. Contact jewellers for exact rates. Updated: Apr 2025</div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- GOLD PRICE CHART SECTION 1990-2026 -->
+<div class="sec" id="exchange-rates" style="background:linear-gradient(180deg,#fffbf2 0%,#fff8ee 100%);border-top:1px solid #f0d8a0;border-bottom:1px solid #f0d8a0;">
+  <div class="wrap">
+
+    <!-- SECTION HEADER -->
+    <div class="sec-hd">
+      <div>
+        <div class="sec-title" style="color:var(--ink);">🪙 ශ්‍රී ලංකා රන් මිල ඉතිහාසය &nbsp;<span style="color:var(--gold);">1990 – 2026</span></div>
+        <div class="rule"></div>
+        <div class="sec-sub" style="margin-top:6px;color:var(--muted);">Sri Lanka Gold Price History per Sovereign (8g) · Full Analytics · 1990–2026</div>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+        <button onclick="setEra('all')"    id="era-all"    class="era-btn active-era">All (1990–2026)</button>
+        <button onclick="setEra('pre2000')" id="era-pre2000" class="era-btn">1990–1999</button>
+        <button onclick="setEra('2000s')"  id="era-2000s"  class="era-btn">2000–2009</button>
+        <button onclick="setEra('2010s')"  id="era-2010s"  class="era-btn">2010–2019</button>
+        <button onclick="setEra('2020s')"  id="era-2020s"  class="era-btn">2020–2026</button>
+      </div>
+    </div>
+
+    <!-- STAT CARDS -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px;" id="stat-cards">
+      <div class="stat-card">
+        <div class="sc-label">රන් මිල අද (2026)</div>
+        <div class="sc-val" style="color:var(--gold-lt);">LKR 255,000–265,000</div>
+        <div class="sc-sub">per sovereign (8g)</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-label">1990 සිට වර්ධනය</div>
+        <div class="sc-val" style="color:#4caf50;">77x වැඩි</div>
+        <div class="sc-sub">LKR 3,400 → 262,500</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-label">වාර්ෂික සාමාන්‍ය වර්ධනය</div>
+        <div class="sc-val" style="color:#fff;">~12.8%</div>
+        <div class="sc-sub">compound annual growth</div>
+      </div>
+      <div class="stat-card">
+        <div class="sc-label">CBSL පොලී අනුපාතය</div>
+        <div class="sc-val" style="color:#0FA88F;">8.0%</div>
+        <div class="sc-sub">2025–2026 (down from 20% peak)</div>
+      </div>
+    </div>
+
+    <!-- CHART TYPE TOGGLE -->
+    <div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap;">
+      <button onclick="setChartType('line')"  id="ct-line"  class="ct-btn ct-active">📈 Line Chart</button>
+      <button onclick="setChartType('bar')"   id="ct-bar"   class="ct-btn">📊 Bar Chart</button>
+      <button onclick="toggleGrowth()"        id="ct-grow"  class="ct-btn">🔢 YoY% ON</button>
+    </div>
+
+    <!-- MAIN CHART -->
+    <div style="background:#fff;border:1px solid #eeddaa;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 16px rgba(200,133,26,.08);">
+      <canvas id="goldChart" height="105"></canvas>
+    </div>
+
+    <!-- ANALYTICS PANELS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:18px;">
+
+      <!-- PERIOD ANALYSIS -->
+      <div style="background:#fff;border:1px solid #eedfa0;border-radius:12px;padding:18px;box-shadow:0 1px 8px rgba(200,133,26,.06);">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--gold);margin-bottom:14px;">📊 දශක විශ්ලේෂණය · Era Analysis</div>
+        <div class="ana-row"><span>1990–1999</span><span class="ana-val">LKR 3,400 → 6,400</span><span class="ana-chg up">+88%</span></div>
+        <div class="ana-row"><span>2000–2009</span><span class="ana-val">LKR 7,300 → 32,500</span><span class="ana-chg up">+345%</span></div>
+        <div class="ana-row"><span>2010–2019</span><span class="ana-val">LKR 38,000 → 72,000</span><span class="ana-chg up">+89%</span></div>
+        <div class="ana-row"><span>2020–2026</span><span class="ana-val">LKR 102,000 → 262,500</span><span class="ana-chg up">+157%</span></div>
+        <div class="ana-row" style="border-top:1px solid #f0e8c0;margin-top:8px;padding-top:8px;">
+          <span>Best year</span><span class="ana-val">2022</span><span class="ana-chg up">+43.5%</span>
+        </div>
+        <div class="ana-row">
+          <span>Worst year</span><span class="ana-val">2013</span><span class="ana-chg dn">-15.0%</span>
+        </div>
+      </div>
+
+      <!-- GOLD CALCULATOR -->
+      <div style="background:#fff;border:1px solid #d0c8f0;border-radius:12px;padding:18px;box-shadow:0 1px 8px rgba(92,107,192,.06);">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--gold);margin-bottom:14px;">🧮 Gold Price Calculator</div>
+        <div style="margin-bottom:10px;">
+          <label class="calc-label">බර (grams) · Weight</label>
+          <input type="number" id="gold-grams" value="8" oninput="calcGold()"
+            style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:#f8f6ff;color:var(--ink);font-size:.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;border-color:#d0c8f0;">
+        </div>
+        <div style="margin-bottom:10px;">
+          <label class="calc-label">සංශුද්ධතාව · Purity</label>
+          <select id="gold-purity" onchange="calcGold()"
+            style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:#f8f6ff;color:var(--ink);font-size:.85rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;">
+            <option value="1.000">24K (99.9%)</option>
+            <option value="0.9167" selected>22K (91.67%)</option>
+            <option value="0.750">18K (75%)</option>
+            <option value="0.583">14K (58.3%)</option>
+          </select>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label class="calc-label">වර්ෂය · Year (Rate)</label>
+          <select id="gold-year" onchange="calcGold()"
+            style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:#f8f6ff;color:var(--ink);font-size:.85rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;">
+          </select>
+        </div>
+        <div id="gold-result-box" style="padding:11px 14px;border-radius:8px;background:var(--gold);color:var(--ink);font-size:1rem;font-weight:700;font-family:'Playfair Display',serif;text-align:center;">LKR 0</div>
+        <div id="gold-land" style="margin-top:8px;font-size:.72rem;color:var(--muted);line-height:1.6;"></div>
+      </div>
+
+      <!-- INVESTMENT CALCULATOR -->
+      <div style="background:#fff;border:1px solid #eedfa0;border-radius:12px;padding:18px;box-shadow:0 1px 8px rgba(200,133,26,.06);">
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--teal);margin-bottom:14px;">💰 Investment Return</div>
+        <div style="margin-bottom:10px;">
+          <label class="calc-label">මිල ගත් වර්ෂය · Buy Year</label>
+          <select id="inv-buy" onchange="calcInvest()"
+            style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:#f8f6ff;color:var(--ink);font-size:.85rem;outline:none;">
+          </select>
+        </div>
+        <div style="margin-bottom:10px;">
+          <label class="calc-label">ආයෝජනය (LKR) · Amount</label>
+          <input type="number" id="inv-amount" value="100000" oninput="calcInvest()"
+            style="width:100%;padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:#f8f6ff;color:var(--ink);font-size:.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;border-color:#d0c8f0;">
+        </div>
+        <div id="inv-result" style="padding:11px 14px;border-radius:8px;background:var(--teal);color:#fff;font-size:.9rem;font-weight:700;font-family:'Playfair Display',serif;text-align:center;line-height:1.5;"></div>
+        <div id="inv-vs-bank" style="margin-top:8px;font-size:.72rem;color:var(--muted);line-height:1.6;"></div>
+      </div>
+    </div>
+
+    <!-- FULL DATA TABLE -->
+    <div style="background:#fff;border:1px solid #eedfa0;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(200,133,26,.07);">
+      <div style="padding:14px 18px;border-bottom:1px solid #f0d890;display:flex;justify-content:space-between;align-items:center;background:#fffbf0;">
+        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-size:.85rem;font-weight:700;color:var(--ink);">ශ්‍රී ලංකා රන් මිල ඉතිහාස වගුව · Sri Lanka Gold Price Table 1990–2026</span>
+        <span style="font-size:.7rem;color:var(--muted);">Per sovereign (8g) · LKR</span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:.78rem;">
+          <thead>
+            <tr style="background:rgba(255,255,255,.07);">
+              <th class="th">වර්ෂය · Year</th>
+              <th class="th" style="text-align:right;">සාමාන්‍ය මිල · Avg Price (LKR)</th>
+              <th class="th" style="text-align:right;">ප්‍රතිග්‍රාම · Per Gram</th>
+              <th class="th" style="text-align:right;">YoY වෙනස · Change</th>
+              <th class="th" style="text-align:right;">1990 සිට · Since 1990</th>
+            </tr>
+          </thead>
+          <tbody id="gold-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <p style="font-size:.68rem;color:var(--muted);margin-top:12px;">* ශ්‍රී ලංකාවේ රන් මිල sovereign (8g) ට. CBSL = Central Bank of Sri Lanka Standing Lending Facility Rate. 2024 = estimated average. 2026 = current market range LKR 255,000–265,000. Data compiled from CBSL Annual Reports &amp; market sources.</p>
+  </div>
+</div>
+
+<style>
+.era-btn {
+  padding:6px 13px;border-radius:6px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);color:rgba(255,255,255,.65);
+  font-size:.72rem;font-weight:700;cursor:pointer;transition:all .15s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.active-era { background:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important; }
+.era-btn:hover:not(.active-era){ background:rgba(255,255,255,.14);color:#fff; }
+
+.ct-btn {
+  padding:6px 13px;border-radius:6px;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.06);color:rgba(255,255,255,.6);
+  font-size:.72rem;font-weight:600;cursor:pointer;transition:all .15s;
+  font-family:'Plus Jakarta Sans',sans-serif;
+}
+.ct-active { background:var(--teal)!important;color:#fff!important;border-color:var(--teal)!important; }
+
+.stat-card {
+  background:#fff;border:1px solid #eedfa0;
+  border-radius:12px;padding:16px 18px;
+  box-shadow:0 2px 8px rgba(200,133,26,.08);
+}
+.sc-label { font-size:.67rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px; }
+.sc-val { font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:800;color:var(--ink); }
+.sc-sub { font-size:.68rem;color:var(--muted);margin-top:3px; }
+
+.ana-row {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:6px 0;border-bottom:1px solid #f0e8c0;
+  font-size:.75rem;color:var(--muted);gap:6px;
+}
+.ana-row:last-child{border:none;}
+.ana-val{color:var(--ink);font-weight:600;flex-shrink:0;}
+.ana-chg{font-weight:700;font-size:.72rem;flex-shrink:0;}
+.ana-chg.up{color:#4caf50;} .ana-chg.dn{color:#f44336;}
+
+.calc-label{display:block;font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px;}
+
+.th{text-align:left;padding:9px 16px;color:var(--muted);font-weight:600;font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;}
+</style>
+
+<!-- Chart.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script>
+// ── FULL DATA 1990-2026 ───────────────────────────────────────────────────────
+const GOLD = [
+  {y:1990,p:3400,   r:16.0},
+  {y:1991,p:3700,   r:15.0},
+  {y:1992,p:4100,   r:14.0},
+  {y:1993,p:4300,   r:13.0},
+  {y:1994,p:4500,   r:12.5},
+  {y:1995,p:4800,   r:13.0},
+  {y:1996,p:5200,   r:14.0},
+  {y:1997,p:5500,   r:13.5},
+  {y:1998,p:6000,   r:14.0},
+  {y:1999,p:6400,   r:13.0},
+  {y:2000,p:7300,   r:14.0},
+  {y:2001,p:8100,   r:12.0},
+  {y:2002,p:9500,   r:10.5},
+  {y:2003,p:11200,  r:8.5},
+  {y:2004,p:12500,  r:7.5},
+  {y:2005,p:14800,  r:10.0},
+  {y:2006,p:19500,  r:12.0},
+  {y:2007,p:23000,  r:15.0},
+  {y:2008,p:27500,  r:20.0},
+  {y:2009,p:32500,  r:10.0},
+  {y:2010,p:38000,  r:7.25},
+  {y:2011,p:52000,  r:8.5},
+  {y:2012,p:56500,  r:9.75},
+  {y:2013,p:48000,  r:6.5},
+  {y:2014,p:44500,  r:6.5},
+  {y:2015,p:45000,  r:6.0},
+  {y:2016,p:50000,  r:8.5},
+  {y:2017,p:54500,  r:8.5},
+  {y:2018,p:60000,  r:9.0},
+  {y:2019,p:72000,  r:8.0},
+  {y:2020,p:102000, r:5.5},
+  {y:2021,p:115000, r:6.0},
+  {y:2022,p:165000, r:16.5},
+  {y:2023,p:175000, r:10.0},
+  {y:2024,p:215000, r:8.5},
+  {y:2025,p:235000, r:8.0},
+  {y:2026,p:262500, r:8.0},
+];
+
+// Precompute YoY
+GOLD.forEach((d,i)=>{
+  d.yoy = i===0 ? null : ((d.p - GOLD[i-1].p)/GOLD[i-1].p*100);
+  d.mult = (d.p/3400).toFixed(1);
+  d.pgram = Math.round(d.p/8);
+});
+
+// Era slices
+const ERAS = {
+  all:     GOLD,
+  pre2000: GOLD.filter(d=>d.y<=1999),
+  '2000s': GOLD.filter(d=>d.y>=2000&&d.y<=2009),
+  '2010s': GOLD.filter(d=>d.y>=2010&&d.y<=2019),
+  '2020s': GOLD.filter(d=>d.y>=2020),
+};
+
+let goldChart, currentData=GOLD, chartType='line', showGrowth=false;
+
+// ── BUILD CHART ───────────────────────────────────────────────────────────────
+function buildChart(data) {
+  const ctx = document.getElementById('goldChart').getContext('2d');
+  if(goldChart) goldChart.destroy();
+
+  const grad = ctx.createLinearGradient(0,0,0,420);
+  grad.addColorStop(0,'rgba(245,200,66,0.3)');
+  grad.addColorStop(1,'rgba(245,200,66,0.01)');
+
+  const datasets = [];
+
+  // Gold price dataset
+  datasets.push({
+    label: 'රන් මිල (LKR per 8g)',
+    data: data.map(d=>d.p),
+    borderColor:'#F5C842',
+    backgroundColor: chartType==='line' ? grad : 'rgba(245,200,66,0.7)',
+    borderWidth: chartType==='line' ? 2.5 : 1,
+    pointBackgroundColor:'#F5C842',
+    pointRadius: data.length>20 ? 3 : 5,
+    pointHoverRadius:8,
+    fill: chartType==='line',
+    tension:0.35,
+    yAxisID:'y',
+    type: chartType,
+  });
+
+
+
+  // YoY % growth bars
+  if(showGrowth) {
+    datasets.push({
+      label:'YoY Change (%)',
+      data: data.map(d=>d.yoy ? +d.yoy.toFixed(1) : null),
+      backgroundColor: data.map(d=>{
+        if(!d.yoy) return 'transparent';
+        return d.yoy>0 ? 'rgba(76,175,80,0.55)' : 'rgba(244,67,54,0.55)';
+      }),
+      borderColor: data.map(d=>{
+        if(!d.yoy) return 'transparent';
+        return d.yoy>0 ? '#4caf50' : '#f44336';
+      }),
+      borderWidth:1,
+      borderRadius:3,
+      yAxisID:'y3', type:'bar',
+    });
+  }
+
+  goldChart = new Chart(ctx, {
+    type: chartType,
+    data: { labels: data.map(d=>d.y.toString()), datasets },
+    options: {
+      responsive:true,
+      interaction:{ mode:'index', intersect:false },
+      plugins:{
+        legend:{
+          labels:{ color:'rgba(255,255,255,.7)', font:{size:11,family:"'DM Sans',sans-serif"}, boxWidth:16, padding:18 }
+        },
+        tooltip:{
+          backgroundColor:'rgba(26,26,46,.97)',
+          borderColor:'rgba(200,133,26,.4)',
+          borderWidth:1,
+          titleColor:'rgba(255,255,255,.9)',
+          bodyColor:'rgba(255,255,255,.65)',
+          padding:12,
+          callbacks:{
+            title: items => '📅 '+items[0].label,
+            label: ctx => {
+              if(ctx.dataset.label.includes('රන්'))
+                return '  💰 Gold: LKR '+ctx.parsed.y.toLocaleString();
+              if(ctx.dataset.label.includes('CBSL'))
+                return '  🏦 CBSL Rate: '+ctx.parsed.y+'%';
+              if(ctx.dataset.label.includes('YoY'))
+                return '  📈 YoY: '+(ctx.parsed.y>0?'+':'')+ctx.parsed.y+'%';
+            }
+          }
+        }
+      },
+      scales:{
+        x:{ ticks:{color:'rgba(255,255,255,.45)',font:{size:10},maxRotation:45}, grid:{color:'rgba(255,255,255,.05)'} },
+        y:{
+          type:'linear', position:'left',
+          title:{display:true,text:'LKR / 8g sovereign',color:'#8888AA',font:{size:10}},
+          ticks:{color:'#6B6B8A',font:{size:10},callback:v=>v>=1000?(v/1000)+'K':v},
+          grid:{color:'#f0ece8'},
+        },
+
+        y3:{
+          type:'linear', position:'right', display:showGrowth,
+          title:{display:showGrowth,text:'YoY %',color:'rgba(255,255,255,.4)',font:{size:10}},
+          ticks:{color:'#6B6B8A',font:{size:10},callback:v=>v+'%'},
+          grid:{drawOnChartArea:false}, min:-25, max:55,
+        }
+      }
+    }
+  });
+}
+
+// ── ERA FILTER ────────────────────────────────────────────────────────────────
+function setEra(era) {
+  currentData = ERAS[era];
+  buildChart(currentData);
+  document.querySelectorAll('.era-btn').forEach(b=>b.classList.remove('active-era'));
+  document.getElementById('era-'+era).classList.add('active-era');
+  updateStatCards(currentData);
+}
+
+function updateStatCards(data) {
+  const first=data[0], last=data[data.length-1];
+  const growth=((last.p-first.p)/first.p*100).toFixed(0);
+  const yoys=data.filter(d=>d.yoy!==null);
+  const best=yoys.reduce((a,b)=>a.yoy>b.yoy?a:b);
+  const worst=yoys.reduce((a,b)=>a.yoy<b.yoy?a:b);
+  const cards=document.getElementById('stat-cards');
+  cards.children[0].children[1].textContent='LKR '+last.p.toLocaleString();
+  cards.children[0].children[2].textContent=first.y+'–'+last.y;
+  cards.children[1].children[1].textContent=growth+'% වැඩිවීම';
+  cards.children[1].children[2].textContent='LKR '+first.p.toLocaleString()+' → '+last.p.toLocaleString();
+  cards.children[2].children[1].textContent='Best: '+best.y+' (+'+(best.yoy.toFixed(1))+'%)';
+  cards.children[2].children[2].textContent='Worst: '+worst.y+' ('+(worst.yoy.toFixed(1))+'%)';
+}
+
+// ── CHART TYPE ────────────────────────────────────────────────────────────────
+function setChartType(type) {
+  chartType=type;
+  buildChart(currentData);
+  document.querySelectorAll('.ct-btn').forEach(b=>b.classList.remove('ct-active'));
+  document.getElementById('ct-'+type).classList.add('ct-active');
+}
+
+function toggleGrowth(){
+  showGrowth=!showGrowth;
+  const btn=document.getElementById('ct-grow');
+  btn.textContent='🔢 YoY% '+(showGrowth?'ON':'OFF');
+  btn.classList.toggle('ct-active',showGrowth);
+  buildChart(currentData);
+}
+
+// ── POPULATE YEAR SELECTS ─────────────────────────────────────────────────────
+function fillSelects() {
+  const gyear=document.getElementById('gold-year');
+  const ibuy =document.getElementById('inv-buy');
+  [...GOLD].reverse().forEach(d=>{
+    const lbl=d.y===2026?'2026 (today ~262,500)':d.y+' (LKR '+d.p.toLocaleString()+')';
+    gyear.innerHTML+=`<option value="${d.p}">${lbl}</option>`;
+    ibuy.innerHTML +=`<option value="${d.y}">${d.y} — LKR ${d.p.toLocaleString()}</option>`;
+  });
+  calcGold(); calcInvest();
+}
+
+// ── GOLD CALCULATOR ───────────────────────────────────────────────────────────
+function calcGold() {
+  const grams  = parseFloat(document.getElementById('gold-grams').value)||0;
+  const purity = parseFloat(document.getElementById('gold-purity').value)||0.9167;
+  const pgram  = parseFloat(document.getElementById('gold-year').value)||262500;
+  const perG   = pgram/8; // sovereign = 8g
+  const val    = grams * purity * perG;
+  document.getElementById('gold-result-box').textContent='LKR '+Math.round(val).toLocaleString();
+  const pN=(val/1900000).toFixed(3), pK=(val/1000000).toFixed(3), pKu=(val/400000).toFixed(3);
+  document.getElementById('gold-land').innerHTML=
+    `🏡 ${grams}g of gold ≈ <b style="color:var(--gold-lt)">${pN}</b> perches in Nugegoda · <b style="color:var(--gold-lt)">${pK}</b> in Kandy · <b style="color:var(--gold-lt)">${pKu}</b> in Kurunegala`;
+}
+
+// ── INVESTMENT CALCULATOR ─────────────────────────────────────────────────────
+function calcInvest() {
+  const buyYr  = parseInt(document.getElementById('inv-buy').value)||1990;
+  const amount = parseFloat(document.getElementById('inv-amount').value)||100000;
+  const buyRow = GOLD.find(d=>d.y===buyYr);
+  const nowRow = GOLD[GOLD.length-1];
+  if(!buyRow) return;
+  const grams  = amount / buyRow.p * 8; // how many grams bought
+  const nowVal = (grams / 8) * nowRow.p;
+  const profit = nowVal - amount;
+  const mult   = (nowVal/amount).toFixed(1);
+  const years  = nowRow.y - buyYr;
+  const cagr   = years>0 ? (((nowVal/amount)**(1/years)-1)*100).toFixed(1) : '—';
+
+  // Bank comparison (avg 9% FD)
+  const bankVal = amount * Math.pow(1.09, years);
+
+  document.getElementById('inv-result').innerHTML=
+    `LKR ${amount.toLocaleString()} in ${buyYr}<br>→ <big>LKR ${Math.round(nowVal).toLocaleString()}</big><br><span style="font-size:.8rem;opacity:.8">${mult}x return · CAGR ${cagr}% · ${years}yrs</span>`;
+  document.getElementById('inv-vs-bank').innerHTML=
+    `🏦 Bank FD (avg 9%/yr) would give: <b style="color:#4caf50">LKR ${Math.round(bankVal).toLocaleString()}</b><br>`+
+    `💰 Gold ${profit>bankVal-amount?'<b style="color:#4caf50">outperformed</b>':'<b style="color:#f44336">underperformed</b>'} vs bank FD by LKR ${Math.abs(Math.round(nowVal-bankVal)).toLocaleString()}`;
+}
+
+// ── BUILD TABLE ───────────────────────────────────────────────────────────────
+function buildTable() {
+  const tbody=document.getElementById('gold-tbody');
+  [...GOLD].reverse().forEach((d,i)=>{
+    const yoy=d.yoy!==null ? (d.yoy>0?'+':'')+d.yoy.toFixed(1)+'%' : '—';
+    const yoyC=d.yoy===null?'rgba(255,255,255,.4)':d.yoy>0?'#4caf50':'#f44336';
+    const yr   = d.y===2026 ? '2026 (අද·Today)' : d.y;
+    const price= d.y===2026 ? '255,000–265,000' : d.p.toLocaleString();
+    const bg   = i%2===0?'rgba(255,255,255,.02)':'transparent';
+    tbody.innerHTML+=`<tr style="border-bottom:1px solid rgba(255,255,255,.05);background:${bg}">
+      <td style="padding:8px 16px;color:rgba(255,255,255,.85);font-weight:600;">${yr}</td>
+      <td style="padding:8px 16px;color:var(--gold-lt);font-weight:700;text-align:right;">LKR ${price}</td>
+      <td style="padding:8px 16px;color:#fff;text-align:right;">LKR ${(d.pgram).toLocaleString()}</td>
+      <td style="padding:8px 16px;color:${yoyC};font-weight:700;text-align:right;">${yoy}</td>
+      <td style="padding:8px 16px;color:var(--accent);font-weight:600;text-align:right;">${d.mult}x</td>
+    </tr>`;
+  });
+}
+
+// ── INIT ──────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',()=>{
+  buildChart(GOLD);
+  buildTable();
+  fillSelects();
+  document.getElementById('ct-line').classList.add('ct-active');
+
+});
+</script>
 
 <!-- FEATURED PROPERTY LISTINGS -->
 <div class="sec sec-alt" id="property">
@@ -985,9 +1451,9 @@
 <div class="loc-section" id="locations">
   <div class="wrap">
     <div style="margin-bottom:36px;">
-      <div class="sec-title" style="color:#fff;">Browse Land Prices by <span style="color:var(--gold-lt);">Location</span></div>
-      <div class="rule" style="background:var(--gold);"></div>
-      <div class="sec-sub" style="color:rgba(255,255,255,.5); margin-top:6px;">All 25 Districts · Western Province highlighted as highest-demand areas</div>
+      <div class="sec-title" style="color:var(--ink);">Browse Land Prices by <span style="color:var(--teal);">Location</span></div>
+      <div class="rule"></div>
+      <div class="sec-sub" style="margin-top:6px;">All 25 Districts · Western Province highlighted as highest-demand areas</div>
     </div>
 
     <!-- WESTERN PROVINCE -->
@@ -1210,6 +1676,7 @@
       <h5>Price Guides</h5>
       <ul>
         <li><a href="https://landmap.lk" target="_blank" rel="noopener">Land Per Perch</a></li>
+        <li><a href="#exchange-rates">GBP/LKR Rate</a></li>
         <li><a href="#">House Prices</a></li>
         <li><a href="#">Annex Rent Prices</a></li>
         <li><a href="#">Vehicle Prices</a></li>
